@@ -48,14 +48,11 @@ describe('books routes', () => {
     expect(response.status).toBe(200);
     expect(response.body.length).toBe(4);
     expect(response.body[0]).toEqual({
-      id: '1',
+      id: 1,
       title: 'super book',
       genre: 'funny',
-      createdAt: expect.any(Date),
-      updatedAt: expect.any(Date),
+      createdAt: expect.any(String),
+      updatedAt: expect.any(String),
     });
   });
-
-
-
 });
