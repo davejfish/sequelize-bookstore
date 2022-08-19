@@ -4,7 +4,7 @@ const db = require('../lib/models');
 
 
 describe('books routes', () => {
-  beforeEach(async () => {
+  beforeAll(async () => {
     await db.sequelize.sync({ force: true });
     try {
 
